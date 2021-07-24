@@ -15,14 +15,14 @@
 -[Questions](#questions)
 
 ## Description
-This application helps the user to keep track of the type of excercise and provides visuals for duration and weight of the excercises logged.
-Please follow [link to deployed application](https://immense-lake-71152.herokuapp.com/).
+This application helps the user to keep track of their funds, add or substract, it is Progressive Web App and works on and offline.
+Please follow [link to deployed application](https://still-headland-45403.herokuapp.com/).
 
-![Screenshot](./assets/Captura.JPG)
+![Screenshot](./public/assets/captura.png)
 ## Installation
 Install the node modules, and run the application.
 ## Usage
-Select the option of New Workout. Then select the type of excercise and log the information required. After that you can update the created workout or create a new one.
+Type the name of the transaction, and the ammount of the transaction. Then select if you're going to add or substract the funds. After that you will get a chart with your transactions.
 ## Contributions
 Contributions are open for this project, clone the repo and add your code.
 ## Tests
