@@ -23,6 +23,10 @@ self.addEventListener("install", function (event) {
     self.skipWaiting();
   });
 
+
+  
+
+
 // fetch
 self.addEventListener("fetch", function(event) {
     if (event.request.url.includes("/api/")) {
