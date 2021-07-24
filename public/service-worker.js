@@ -13,15 +13,13 @@ const DATA_CACHE_NAME = 'data-cache-v1';
 
 // install
 self.addEventListener("install", function (event) {
-     
     // pre cache all static assets
     event.waitUntil(
-      caches.open(CACHE_NAME).then((cache) => cache.addAll(FILES_TO_CACHE))
+      caches.open(CACHE_NAME).then(function (cache) {
+        console.log("Opened cache");
+        return cache.addAll(FILES_TO_CACHE);
+      })
     );
-  
-    // tell the browser to activate this service worker immediately once it
-    // has finished installing
-    self.skipWaiting();
   });
 
 // The activate handler takes care of cleaning up old caches.
